@@ -19,7 +19,9 @@
 Сам бот: https://t.me/Harry_Potter_or_computer_bot.
 
 Код бота содержится в фйле `first_bot.py`. 
+
 В файле `users_data.csv` хранятся данные о пользователях (имя и их баллы).
+
 В файле `with_pred_hp.csv` хранятся предложения и их классификация (original/generated), также хранится классификация от модели Naive Bayes.
 
 Для запуска надо:
