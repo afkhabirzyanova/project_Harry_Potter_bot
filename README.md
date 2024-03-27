@@ -16,7 +16,8 @@
 Все этапе предобработки, генерации и обучения модели содержатся в файле `harry_potter_project.ipynb`.
 
 ## 3.Создание бота в Telegram
-Сам бот: https://t.me/Harry_Potter_or_computer_bot
+Сам бот: https://t.me/Harry_Potter_or_computer_bot.
+
 Код бота содержится в фйле `first_bot.py`. 
 В файле `users_data.csv` хранятся данные о пользователях (имя и их баллы).
 В файле `with_pred_hp.csv` хранятся предложения и их классификация (original/generated), также хранится классификация от модели Naive Bayes.
