@@ -105,13 +105,16 @@ def game(message):
 # Обработчик кнопки "Показать топ-10 игроков"
 @bot.message_handler(func=lambda message: message.text == "Показать топ-10 игроков")
 def show_top_players(message):
+    # Сортируем словарь с оценками пользователей по убыванию баллов и выбираем топ-10
     sorted_users = sorted(user_scores.items(), key=lambda x: x[1], reverse=True)[:10]
+    # Инициализируем строку с сообщением о топ-10 игроках
     top_players_message = "Топ-10 игроков:\n"
+    # Перебираем отсортированных пользователей и добавляем их имена и баллы в сообщение
     for idx, (user_id, score) in enumerate(sorted_users, start=1):
-        user = bot.get_chat(user_id)
-        top_players_message += f"{idx}. {user.first_name} - {score}\n"
+        user = bot.get_chat(user_id)  # Получаем информацию о пользователе по его идентификатору
+        top_players_message += f"{idx}. {user.first_name} - {score}\n"  # Добавляем имя и баллы в сообщение
 
-    bot.send_message(message.chat.id, top_players_message)
+    bot.send_message(message.chat.id, top_players_message)  # Отправляем сообщение с топ-10 игроками пользователю
 
 
 # Обработчик сообщений пользователя, содержащих текст "Оригинал" или "Сгенерирован"
