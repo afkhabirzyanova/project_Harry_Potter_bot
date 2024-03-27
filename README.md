@@ -23,8 +23,10 @@
 Для запуска надо:
 1. В файле `conf.py` вставить свой токен.
 2. Скачать нужные библиотеки из файла `reguirements.txt`.
-3. 
-
+         В терминале:
+         1) python3 -m venv venv
+         2) source venv/bin/activate
+         3) pip install -r reguirements.txt
 
 ## Как работает бот
 1. Чтобы бот начала работу надо нажать в меню на /start.
