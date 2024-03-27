@@ -156,7 +156,7 @@ def handle_buttons(message):
         # Отправляем сообщение о завершении игры с информацией о счете ппользователя и модели Naive Bayes
         bot.send_message(chat_id, "Игра завершена.\n" + message.from_user.first_name + f", у вас счет:"
                                                                                        f" {user_scores.get(chat_id, 0)}"
-                                                                                       "/10.\nСчет модели Naive Bayes:"
+                                                                                       "/10.\nСчет модели Naive Bayes: "
                                                                                        f"{model_scores.get(chat_id, 0)}"
                                                                                        "/10.\n" + winner_message,
                          reply_markup=keyboard)
