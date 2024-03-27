@@ -84,7 +84,7 @@ def start(message):
     keyboard.add(button_start, button_top_players)
 
     bot.send_message(message.chat.id,
-                     message.from_user.first_name + ", давайте проверим, насколько хорошо вы можете отличить оригинал\
+                     message.from_user.first_name + ", давайте проверим насколько хорошо вы можете отличить оригинал\
  от сгенерированного текста. За одну игру будет 10 предложений. C вами параллельно будет угадывать модель Naive Bayes.",
                      reply_markup=keyboard)
 
